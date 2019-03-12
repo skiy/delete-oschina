@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "清空 OSChina 账号信息",
+  "version": "1.0.2",
+  "description": "清空 OSChina 账号信息",
+  "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+  },
+  "browser_action": {
+      "default_icon": {
+          "16": "images/icon16.png",
+          "48": "images/icon48.png"
+      },
+      "default_title": "清空OSChina",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://*.oschina.net/*"],
+          "js": [
+              "js/jquery-3.1.1.min.js",
+              "js/common.js"
+          ],
+          "css": [
+              "css/common.css"
+          ]
+      }
+  ]
+}

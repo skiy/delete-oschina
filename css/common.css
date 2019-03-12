@@ -1,0 +1,21 @@
+#delete-all,
+#do-delete-all {
+    position: fixed;
+    bottom: 20%;
+    left: 50px;
+    width: 66px;
+    height: 30px;
+    line-height: 30px;
+    background-color: blueviolet;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #ffffff;
+    z-index: 9999
+}
+
+#do-delete-all {
+    bottom: 25%;
+}
